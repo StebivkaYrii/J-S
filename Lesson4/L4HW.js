@@ -30,9 +30,6 @@ function D(DD){
 D(DD)
 //- створити функцію яка створює параграф з текстом. Текст задати через аргумент
 function EE (text){
-    document.write('<p>${text}</p>')
-    document.write('<p>${text}</p>')
-    document.write(`<hr>`)
     for (let i = 0; i <= 10; i++) {
         document.write(`<p>${i} - ${text}</p>`)
     }
