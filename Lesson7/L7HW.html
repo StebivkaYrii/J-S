@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  //- Створити функцію конструктор для об'єктів User з полями id, name, surname , email, phone
+function User (id, name, surname, email, phone) {
+    this.id = id;
+    this.name = name;
+    this.surname = surname;
+    this.email = email;
+    this.phone = phone;
+}
+  // створити пустий масив, наповнити його 10 об'єктами new User(....)
+const users = [
+   new User(1,'Yrii','Gagarin','yg@gmail.com',38095000001),
+   new User(2,'Ivan','Vugovskii','ivg@gmail.com',38095000002),
+   new User(3,'Orust','Manuh','oma@gmail.com',38095000003),
+   new User(4,'Stepan','Vovk','sv@gmail.com',38095000004),
+   new User(5,'Iruna','Gyt','irg@gmail.com',38095000005),
+   new User(6,'Tamara','Sem','tas@gmail.com',38095000006),
+   new User(7,'Tanya','Buchak','taby@gmail.com',38095000007),
+   new User(8,'Ilona','Smuchak','ils@gmail.com',38095000008),
+   new User(9,'Viktor','Smyzi','vis@gmail.com',38095000009),
+   new User(10,'Viktor','Borzov','vik@gmail.com',38095000010),
+]
+console.log(users);
+ // - Взяти масив з  User[] з попереднього завдання, та відфільтрувати , залишивши тільки об'єкти з парними id (filter)
+console.log(users.filter(function (xxx) {return xxx.id %2 ===0}));
+//- Взяти масив з  User[] з попереднього завдання, та відсортувати його по id. по зростанню (sort)
+console.log(users.sort(function (a,b) {return a.id - b.id}));
+  // - створити класс для об'єктів Client з полями id, name, surname , email, phone, order (поле є масивом зі списком товарів)
+class Client {
+    constructor(id,name,surname,email,phone,order) {
+        this.id = id;
+        this.name = name;
+        this.surname = surname;
+        this.email = email;
+        this.phone = phone;
+        this.order = order;
+    }
+}
+// створити пустий масив, наповнити його 10 об'єктами Client
+let clients =[
+    new Client(1,'Yrii','Gagarin','yg@gmail.com',38095000001,['....','....','....']),
+    new Client(2,'Ivan','Vugovskii','ivg@gmail.com',38095000002,['...','...','...']),
+    new Client(3,'Orust','Manuh','oma@gmail.com',38095000003,['...','...']),
+    new Client(4,'Stepan','Vovk','sv@gmail.com',38095000004,['...','...','...','...']),
+    new Client(5,'Iruna','Gyt','irg@gmail.com',38095000005,['...','...']),
+    new Client(6,'Tamara','Sem','tas@gmail.com',38095000006,['...','...','...']),
+    new Client(7,'Tanya','Buchak','taby@gmail.com',38095000007,['...','...','...']),
+    new Client(8,'Ilona','Smuchak','ils@gmail.com',38095000008,['...']),
+    new Client(9,'Viktor','Smyzi','vis@gmail.com',38095000009,['...','...']),
+    new Client(10,'Viktor','Borzov','vik@gmail.com',38095000010,['...','...']),
+]
+console.log(clients)
+// - Взяти масив (Client [] з попереднього завдання).Відсортувати його по кількості товарів в полі order по зростанню. (sort)
+console.log(clients.sort(function (a,b) {return a.order.length - b.order.length}));
+</script>
+</body>
+</html>
