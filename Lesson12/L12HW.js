@@ -22,10 +22,9 @@ fetch(`https://jsonplaceholder.typicode.com/posts`)
             document.body.appendChild(wraper);
         }
     })
-//   //    2.
-// //  Отримати відповідь з цього ресурсу відповідь, та вивести в документ як в прикладі на занятті.
-// //      Для кожного елементу свій блок div.comment
-//  // Всі характеристики повинні мати свої блоки всередені div.comment
+//2   Отримати відповідь з цього ресурсу відповідь, та вивести в документ як в прикладі на занятті.
+//    Для кожного елементу свій блок div.comment
+//Всі характеристики повинні мати свої блоки всередені div.comment
 
 // https://jsonplaceholder.typicode.com/comments
 
@@ -47,8 +46,3 @@ fetch('https://jsonplaceholder.typicode.com/comments')
             document.body.appendChild(wraper);
         }
     })
-
-
-
-
-
