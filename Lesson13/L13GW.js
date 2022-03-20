@@ -3,7 +3,6 @@
 //     let counter = 0;
 //
 // },1000)
-
 setTimeout(() => {
     let counter = 0;
     console.log('7:50 - подзвонив будильник', counter);
@@ -66,12 +65,5 @@ setTimeout(() => {
                 },1000)
             },1000)
         }, 1000)
-    }, 1000);
+    }, 1000)
 }, 1000)
-
-// setTimeout(() => {
-//     counter ++;
-//     console.log('7:50 - ', counter);
-//
-// },1000)
-
